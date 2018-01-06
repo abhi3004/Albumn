@@ -1,0 +1,10 @@
+<ion-view view-title="Your Albumns">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+   <a class="btn-floating btn-large waves-effect waves-light red" id="add"><i class="material-icons">add</i></a>
+ </ion-content>
+</ion-view>
